@@ -1,0 +1,89 @@
+{
+  ConstraintSets: {
+    start: {
+      card: {
+        width: 'parent',
+        height: 'parent',
+        start: ['parent', 'start', 16],
+        top: ['parent', 'top', 16],
+        bottom: ['parent', 'bottom', 16]
+      },
+      bottomSheet: {
+        width: 'parent',
+        height: 0,
+        start: ['parent', 'start'],
+        bottom: ['parent', 'bottom']
+      },
+      topSheet: {
+        width: 'parent',
+        height: '40%',
+        start: ['parent', 'start'],
+        top: ['parent', 'top']
+      },
+      box: {
+        width: 'spread',
+        height: 'spread',
+        start: ['parent', 'start'],
+        end: ['parent', 'end'],
+        top: ['parent', 'top'],
+        bottom: ['parent', 'bottom', -16],
+      }
+    },
+    middle: {
+      card: {
+        width: 250,
+        height: 350,
+        start: ['parent', 'start'],
+        end: ['parent', 'end', 20],
+        top: ['parent', 'top', 16],
+      },
+      bottomSheet: {
+        width: 'parent',
+        height: '50%',
+        start: ['parent', 'start'],
+        bottom: ['parent', 'bottom']
+      },
+      topSheet: {
+        width: 'parent',
+        height: 0,
+        start: ['parent', 'start'],
+        top: ['parent', 'top']
+      },
+      box: {
+        width: 'spread',
+        height: 'spread',
+        start: ['parent', 'start'],
+        end: ['parent', 'end'],
+        top: ['parent', 'top'],
+        bottom: ['parent', 'bottom', -16],
+      }
+    }
+  },
+  Transitions: {
+    default: {
+      from: 'start',
+      to: 'middle',
+      pathMotionArc: 'startVertical',
+      KeyFrames: {
+        KeyAttributes: [
+          {
+            target: ['card'],
+            frames: [0, 100],
+            rotationZ: [0, 90],
+            translationY: [0, -210],
+          },
+          {
+            target: ['bottomSheet'],
+            frames: [0, 100],
+            translationY: [0, '50%'],
+          },
+          {
+            target: ['topSheet'],
+            frames: [0, 100],
+            translationY: ['40%', 0],
+          }
+        ]
+      }
+    }
+  }
+}

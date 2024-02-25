@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Waste2Wealth</string>
+    <string name="mapbox_access_token">pk.eyJ1IjoidGhla2FhaWxhc2giLCJhIjoiY2xzcTEwcHB1MHV4ODJpdGdudnRrbTZmdCJ9.oPesPCn2YUA1qhqqLPEkqg</string>
+</resources>

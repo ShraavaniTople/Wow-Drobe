@@ -1,0 +1,99 @@
+{
+  ConstraintSets: {
+    middle: {
+      card: {
+        width: 250,
+        height: 350,
+        start: ['parent', 'start'],
+        end: ['parent', 'end', 20],
+        top: ['parent', 'top', 16],
+        rotationZ: 90,
+      },
+      bottomSheet: {
+        width: 'parent',
+        height: '50%',
+        start: ['parent', 'start'],
+        bottom: ['parent', 'bottom']
+      },
+      topSheet: {
+        width: 'parent',
+        height: 0,
+        start: ['parent', 'start'],
+        top: ['parent', 'top']
+      },
+      box: {
+        width: 'spread',
+        height: 'spread',
+        start: ['parent', 'start'],
+        end: ['parent', 'end'],
+        top: ['parent', 'top'],
+        bottom: ['parent', 'bottom'],
+      },
+      text: {
+        width: 'parent',
+        height: 'parent',
+        start: ['parent', 'start'],
+        top: ['parent', 'top'],
+      }
+    },
+    end: {
+      card: {
+        width: 50,
+        height: 100,
+        start: ['parent', 'start'],
+        top: ['parent', 'top', -80],
+        rotationZ: 90,
+        translationZ: 200,
+      },
+      bottomSheet: {
+        width: 'parent',
+        height: '90%',
+        start: ['parent', 'start'],
+        bottom: ['parent', 'bottom']
+      },
+      topSheet: {
+        width: 'parent',
+        height: '30%',
+        start: ['parent', 'start'],
+        top: ['parent', 'top'],
+        end: ['parent', 'end'],
+      },
+      box: {
+        width: 'spread',
+        height: 'spread',
+        start: ['parent', 'start'],
+        end: ['parent', 'end'],
+        top: ['parent', 'top'],
+        bottom: ['parent', 'bottom'],
+      },
+      text: {
+        width: 'parent',
+        height: 'parent',
+        start: ['parent', 'start'],
+        top: ['parent', 'top'],
+        end: ['parent', 'end',],
+      }
+    }
+  },
+  Transitions: {
+    default: {
+      from: 'middle',
+      to: 'end',
+      pathMotionArc: 'startVertical',
+      KeyFrames: {
+        KeyAttributes: [
+          {
+            target: ['card'],
+            frames: [0, 100],
+            translationY: [0, -200],
+          },
+          {
+            target: ['bottomSheet'],
+            frames: [0, 100],
+            translationY: ['50%', '90%'],
+          },
+        ]
+      }
+    }
+  }
+}
