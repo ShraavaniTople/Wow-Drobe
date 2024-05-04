@@ -145,7 +145,7 @@ fun ClaimedRewardsScreen(
         PermissionDrawer(
             drawerState = permissionDrawerState,
             permissionState = permissionState,
-            rationaleText = "To continue, allow Report Waste2Wealth to access your device's location" +
+            rationaleText = "To continue, allow ReportwowDrobe to access your device's location" +
                     ". Tap Settings > Permission, and turn \"Access Location On\" on.",
             withoutRationaleText = "Location permission required for functionality of this app." +
                     " Please grant the permission.",

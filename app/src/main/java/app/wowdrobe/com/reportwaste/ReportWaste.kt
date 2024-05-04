@@ -290,7 +290,7 @@ fun ReportWaste(
             PermissionDrawer(
                 drawerState = permissionDrawerState,
                 permissionState = permissionState,
-                rationaleText = "To continue, allow Waste2Wealth to access your device's camera" +
+                rationaleText = "To continue, allowwowDrobe to access your device's camera" +
                         ". Tap Settings > Permission, and turn \"Access Camera On\" on.",
                 withoutRationaleText = "Camera permission required for this feature to be available." +
                         " Please grant the permission.",

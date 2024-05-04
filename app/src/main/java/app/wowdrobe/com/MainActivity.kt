@@ -27,7 +27,7 @@ import app.wowdrobe.com.login.onboarding.SmsBroadcastReceiver
 import app.wowdrobe.com.login.onboarding.SmsBroadcastReceiver.SmsBroadcastReceiverListener
 import app.wowdrobe.com.navigation.NavigationController
 import app.wowdrobe.com.navigation.Screens
-import app.wowdrobe.com.ui.theme.Waste2WealthTheme
+import app.wowdrobe.com.ui.theme.wowDrobeTheme
 import app.wowdrobe.com.ui.theme.appBackground
 import com.google.accompanist.navigation.animation.rememberAnimatedNavController
 import com.google.accompanist.permissions.ExperimentalPermissionsApi
@@ -49,7 +49,7 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            Waste2WealthTheme {
+            wowDrobeTheme {
                 val navController = rememberAnimatedNavController()
                 val permissionState = rememberMultiplePermissionsState(
                     permissions = listOf(
@@ -77,7 +77,7 @@ class MainActivity : ComponentActivity() {
                 PermissionDrawer(
                     drawerState = permissionDrawerState,
                     permissionState = permissionState,
-                    rationaleText = "To continue, allow Report Waste2Wealth to access your device's location" +
+                    rationaleText = "To continue, allow ReportwowDrobe to access your device's location" +
                             ". Tap Settings > Permission, and turn \"Access Location On\" on.",
                     withoutRationaleText = "Location permission required for functionality of this app." +
                             " Please grant the permission.",
