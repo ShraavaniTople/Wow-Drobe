@@ -35,5 +35,5 @@ dependencyResolutionManagement {
 
 
 }
-rootProject.name = "Waste2Wealth"
+rootProject.name = "WowDrobe"
 include(":app")
